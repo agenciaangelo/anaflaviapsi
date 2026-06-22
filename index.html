@@ -156,6 +156,15 @@ section{position:relative}
 .value b{font-weight:700;display:block}
 .value span{color:var(--muted);font-size:.97rem}
 .note{margin-top:26px;padding:16px 20px;border-left:3px solid var(--terra);background:var(--sage-tint);border-radius:0 14px 14px 0;font-size:.92rem;color:var(--muted)}
+.edu{margin:24px 0 6px}
+.edu__title{font-family:'Mulish',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--terra);margin-bottom:16px}
+.edu ul{list-style:none;display:flex;flex-direction:column;gap:14px}
+.edu li{display:flex;gap:13px;align-items:flex-start;margin:0}
+.edu__mk{width:9px;height:9px;border-radius:3px;background:var(--sage);transform:rotate(45deg);flex:none;margin-top:7px}
+.edu__c{display:flex;flex-direction:column;gap:2px}
+.edu__c b{font-weight:700;color:var(--ink);line-height:1.35}
+.edu__c b em{font-style:normal;font-weight:600;color:var(--terra);white-space:nowrap}
+.edu__c>span{color:var(--muted);font-size:.95rem}
 
 /* CARDS */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
@@ -375,9 +384,18 @@ section{position:relative}
       <div class="about__text reveal">
         <span class="eyebrow">Sobre</span>
         <h2 class="section__title">Sobre Ana Flávia</h2>
-        <p>Sou <strong>Ana Flávia de Lima Ângelo</strong>, psicóloga infantil (CRP 17/8346). Dedico meu trabalho ao universo das <strong>emoções, do desenvolvimento infantil e das relações familiares</strong>. Acredito que cada criança — e cada família — tem seu próprio tempo, e meu papel é oferecer escuta e cuidado para que esse caminho seja percorrido com mais segurança.</p>
-        <!-- PLACEHOLDER: completar com formação acadêmica, abordagem clínica e especializações reais. -->
-        <p>[Espaço para formação acadêmica, abordagem clínica e especializações — preencher apenas com informações verídicas.]</p>
+        <p>Sou <strong>Ana Flávia de Lima Ângelo</strong>, psicóloga infantil (CRP 17/8346). Dedico meu trabalho ao universo das <strong>emoções, do desenvolvimento infantil e das relações familiares</strong>. Acredito que cada trajetória é única, e meu papel é oferecer escuta, acolhimento e cuidado para que crianças e famílias encontrem recursos para enfrentar desafios e construir novos caminhos com mais segurança e confiança.</p>
+        <!-- Formação e qualificações -->
+        <div class="edu">
+          <h3 class="edu__title">Formação e qualificações</h3>
+          <ul>
+            <li><span class="edu__mk"></span><span class="edu__c"><b>Bacharelado em Psicologia</b><span>UNI-RN</span></span></li>
+            <li><span class="edu__mk"></span><span class="edu__c"><b>Formação em Terapia de Aceitação e Compromisso (ACT)</b><span>Instituto PBE</span></span></li>
+            <li><span class="edu__mk"></span><span class="edu__c"><b>Capacitação em Terapia Cognitivo-Comportamental na Infância e Adolescência</b><span>Wainer Psicologia</span></span></li>
+            <li><span class="edu__mk"></span><span class="edu__c"><b>Especialização em Neuropsicologia Clínica <em>· em andamento</em></b><span>UFRN</span></span></li>
+            <li><span class="edu__mk"></span><span class="edu__c"><b>Especialização em Terapia Cognitivo-Comportamental na Infância e Adolescência <em>· em andamento</em></b><span>Comportalmente</span></span></li>
+          </ul>
+        </div>
         <div class="values">
           <div class="value">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg>
